@@ -12,7 +12,7 @@ const Posts = () => {
 
     useEffect(() => {
         dispatch(fetchPosts());
-    }, [])
+    }, [dispatch])
 
     return (
        !posts.length ? <CircularProgress/> : (
